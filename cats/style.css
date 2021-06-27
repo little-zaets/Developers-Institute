@@ -1,0 +1,39 @@
+html {
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	background-image: url("https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-anel-rossouw-2558605.jpg&fm=jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+header, article {
+	background: rgba(250, 247, 247, 0.5);
+}
+
+h1 {
+	padding-top: 15px;
+}
+
+.table, th, td {
+  	border: 1px solid black;
+  	border-collapse: collapse;
+	text-align: center;
+}
+
+.table, .table-header {
+	margin-right: 100px;
+  	margin-left: 100px;
+}
+
+.table-header {
+	text-align: center;
+	color: red;
+	font-weight: bold;
+	border: 1px solid red;
+	margin-bottom: 20px;
+}
+
+.lion img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
