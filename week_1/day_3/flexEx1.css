@@ -1,0 +1,30 @@
+.container {
+	display: flex;
+	border: 1px solid red;
+	margin: auto;
+	height: 768px;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.box {
+	background-color:deepskyblue;	
+	height: 90px; 
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size:50px;
+}
+
+.middle {
+	align-self: center;
+	width: 50%;
+	height: 50%;	
+}
+
+
+
+
