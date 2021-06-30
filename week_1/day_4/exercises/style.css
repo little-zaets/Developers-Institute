@@ -1,0 +1,11 @@
+.demo {
+	padding: 10px;
+	font-size: 20px;
+	background-color: lightblue;
+	margin: 5px;
+	text-align: center;
+}
+
+.dark {
+	background-color: lightseagreen;
+}

@@ -13,7 +13,6 @@ body div.container {
 div.container {
 	align-content: space-around;
 	justify-content: space-evenly;	
-
 }
 
 .container.left, .container.right {
