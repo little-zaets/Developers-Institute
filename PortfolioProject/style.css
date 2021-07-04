@@ -1,0 +1,49 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: "Raleway";
+}
+
+hr {
+	max-width: 65px;
+	border-width: 2px;
+	border-color: slategrey;
+}
+
+div.container-fluid {
+	padding: 0px;
+}
+
+
+header.hello {
+	background-image: url("/home/rinav/Developers-Institute/PortfolioProject/images/portfolio/Classic.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 768px;
+	position: relative;
+}
+
+
+div.overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 2);
+	display: flex;
+	position: absolute;	
+}
+
+header.hello h1 {
+	text-align: center;
+	font-size: 2rem;;
+}
+
+header.startup hr {
+	margin-top: 200px;
+	margin-bottom: 30px;
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
