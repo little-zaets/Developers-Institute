@@ -21,7 +21,12 @@ function countBottles() {
 		printLyrics(totalBottles, fallenBottles);
 		totalBottles -= fallenBottles;
 		++fallenBottles;
-		console.log(`${totalBottles} bottles of beer on the wall`);
+		if (fallenBottles > totalBottles) {
+			console.log(`Now we have ${totalBottles} bottles of beer on the wall`);
+		}
+		else {
+			console.log(`${totalBottles} bottles of beer on the wall`);
+		}
 	}
 }
 
