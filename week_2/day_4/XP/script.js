@@ -4,7 +4,7 @@ Part 1
 Create a function called infoAboutMe() that takes no parameter.
 The function should console.log a sentence about you (ie. your name, age, hobbies ect…).
 Call the function.
-
+*/
 console.log("--------------------------------------------------------------------");
 console.log("Exercise 1 Part 1:");
 
@@ -14,14 +14,14 @@ function infoAboutMe() {
 
 infoAboutMe();
 
-
+/*
 Part 2
 Create a function called infoAboutPerson(personName, personAge, personFavoriteColor) that takes 3 parameters.
 The function should console.log a sentence about the person (ie. “You name is …, you are .. years old, your favorite color is …”)
 Call the function twice with the following arguments:
 infoAboutPerson("David", 45, "blue")
 infoAboutPerson("Josh", 12, "yellow")
-
+*/
 console.log("Exercise 1 Part 2:");
 function infoAboutPerson(personName, personAge, personFavoriteColor) {
 	console.log(`Your name is ${personName}, you are ${personAge} years old, your favorite color is ${personFavoriteColor}`);
@@ -39,7 +39,7 @@ console.log the person’s hobbies one by one (ie. loop through the array of hob
 Call the function twice with the following arguments:
 infoAboutPerson("David", 45, "blue", ["tennis", "painting"])
 infoAboutPerson("Josh", 12, "yellow", ["videoGame", "hanging out with friends", "playing cards"])
-
+*/
 console.log("Exercise 1 Part 3:");
 function updatedInfo(personName, personAge, personFavoriteColor, personHobbies) {
 	console.log(`Your name is ${personName}, you are ${personAge} years old, your favorite color is ${personFavoriteColor} and your hobbies are: `);
@@ -59,7 +59,7 @@ if the user is old enough, alert “You are old enough to drive, Powering On. En
 if the user just turned 18, alert “Congratulations on your first year of driving. Enjoy the ride!”
 Call the function.
 Instead of using prompt to ask the user for their age, have the checkDriverAge() function accept an argument age.
-
+*/
 console.log("--------------------------------------------------------------------");
 console.log("Exercise 2:");
 function checkDriverAge(givenAge) {
@@ -81,14 +81,14 @@ givenAge = prompt("Please enter your age");
 checkDriverAge(givenAge);
 
 //Exercise 3: Odd or Even
-
+/*
 Create a function called checkNumber() that takes no parameter.
 In the function, loop through numbers 0 to 100.
 Add an if/else block
 If the number is even, console.log "the number <number> is even"
 Else, console.log "the number <number> is odd"
 Call the function
-
+*/
 console.log("--------------------------------------------------------------------");
 console.log("Exercise 3: ");
 function checkNumber() {
@@ -111,7 +111,7 @@ Create a function call isDivisible() that takes no parameter.
 In the function, loop through numbers 0 to 500."
 Console.log all the numbers divisible by 23.
 At the end, console.log the sum of all numbers that are divisible by 23.
-
+*/
 console.log("--------------------------------------------------------------------");
 console.log("Exercise 4: ");
 function isDivisible(divisor) {
@@ -138,13 +138,13 @@ divisor = 45;
 isDivisible(divisor);
 
 //Exercise 5: Amazon Shopping
-
+/*
 Create a function called checkBasket().
 It should:
 prompt the user for an item
 let the user know if the item is in the basket
 Hint: Use the in keyword inside the conditional
-
+*/
 console.log("--------------------------------------------------------------------");
 console.log("Exercise 5: ");
 let amazonBasket = {
@@ -154,7 +154,6 @@ let amazonBasket = {
 }
 function checkBasket() {
 	let item = prompt("Which item are you looking for?");
-	//let basket = Object.keys(amazonBasket);
 	if (item in amazonBasket) {
 		return alert("The item is in the basket");
 	}
@@ -169,7 +168,7 @@ checkBasket();
 /*
 Given a item price and an array representing the amount of change in your pocket, determine whether or not you can afford the item.
 Change will always be represented in the following order: quarters, dimes, nickels, pennies.
-
+*/
 console.log("--------------------------------------------------------------------");
 console.log("Exercise 6: ");
 
@@ -222,7 +221,7 @@ change1 = [0, 0, 15, 0];
 changeEnough(change1, 0.75);
 
 //Exercise 7: Shopping List
-
+/*
 Add thestock and prices objects to your js file.
 Create an array called shoppingList with the following items: “banana”, “orange”, and “apple”. It means that you have 1 banana, 1 orange and 1 apple in your cart.
 Create a function called myBill() that takes no parameters.
@@ -231,7 +230,7 @@ The item must be in stock.
 If the item is in stock find out the price in the prices object.
 Call the myBill() function.
 Bonus: If the item is in stock, decrease the item’s stock by 1
-
+*/
 console.log("--------------------------------------------------------------------");
 console.log("Exercise 7: ");
 let stock = { 
@@ -274,7 +273,7 @@ function myBill() {
 myBill();
 
 //Exercise 8: Tips
-
+/*
 John created a simple tip calculator to help calculate how much to tip when he and his family go to restaurants.
 
 The calculator has the following rules:
@@ -288,7 +287,7 @@ In the end, John would like to know:
 Tip amount.
 Final bill (bill + tip).
 (NOTE: To calculate 20% of a value, simply multiply it with 20/100 = 0.2)
-
+*/
 console.log("--------------------------------------------------------------------");
 console.log("Exercise 8: ");
 let amount = prompt("How much was the bill?");
@@ -314,7 +313,7 @@ function calculateBill(amount) {
 calculateBill(amount);
 
 //Exercise 9: Vacation Costs
-
+/*
 Let’s create functions that calculate your vacation’s costs:
 Define a function called hotelCost().
 It should ask the user for the number of nights they would like to stay in the hotel.
