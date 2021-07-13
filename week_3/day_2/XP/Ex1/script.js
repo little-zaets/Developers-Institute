@@ -74,3 +74,19 @@ function appendTable(input1, input2) {
 	column1.innerHTML = `${input2}`;
 }
 
+//When you hover on the 2nd paragraph, it should fade out 
+let p2 = allP[1];
+p2.addEventListener("mouseover", fade);
+function fade() {
+	let intervalId = setInterval(function () {
+		if (!p2.style.opacity) {
+			p2.style.opacity = 1;
+		}
+		if (p2.style.opacity > 0) {
+			p2.style.opacity -= 0.1;
+		}
+		else {
+			clearInterval(intervalId);
+		}
+	}, 200);
+}
