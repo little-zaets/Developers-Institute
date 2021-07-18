@@ -7,32 +7,42 @@ body {
 	font-family: "Raleway";
 }
 
+.nav-bg {
+	background-color: lightslategrey;
+}
+
+.nav-link{
+	color: red !important;
+}
+
 hr {
 	max-width: 65px;
 	border-width: 2px;
 	border-color: slategrey;
 }
 
-div.container-fluid {
-	padding: 0px;
-}
-
-
 header.hello {
 	background-image: url("/home/rinav/Developers-Institute/PortfolioProject/images/portfolio/Classic.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 768px;
+	height: 500px;
 	position: relative;
+	margin: 0;
+	max-width: unset;
 }
 
 
-div.overlay {
+.overlay {
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 2);
 	display: flex;
-	position: absolute;	
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+ 	background: linear-gradient(to bottom, transparent 0%, black 100%);
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
 header.hello h1 {
