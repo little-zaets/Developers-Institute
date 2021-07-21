@@ -54,4 +54,6 @@ let student = [	{name: "Ray", course: "Computer Science", isPassed: true},
 let graduates = student.filter((grade => grade.isPassed === true)).map(graduate => `Congratulations ${graduate.name}`);
 for (let graduate in graduates) {
 	console.log(graduates[graduate]);
-}
+};
+
+
