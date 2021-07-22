@@ -23,7 +23,17 @@ let video2 = new Video("Pulp Fiction", "Dima", 10680);
 video2.watch();
 //Bonus: Use an array to store data for five Video instances (ie. title, uploader, time)
 // Think of the best data structure to save this information within the array.
-let video3 = new Video("Django", "Morris", 10100);
-let video4 = new Video("Hateful Eight", "Jimmy", 6070);
-let video5 = new Video("Kill Bill", "Harold", 8739);
+// let video3 = new Video("Django", "Morris", 10100);
+// let video4 = new Video("Hateful Eight", "Jimmy", 6070);
+// let video5 = new Video("Kill Bill", "Harold", 8739);
+let data = [
+	["Django", "Morris", 10100],
+	["Hateful Eight", "Jimmy", 6070],
+	["Kill Bill", "Harold", 8739],
+	["Inglorious Basterds", "Glennis", 8776],
+	["Kill Bill 2", "James", 5990]
+];
 // Bonus: Loop through the array to instantiate those instances.
+for (item of data) {
+	new Video(...item).watch();
+}
