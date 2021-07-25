@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Sega";
+  src: url(SEGA.TTF);
+}
+
+html {
+	width: 100vw;
+	height: 100vh;
+}
+
+#navContainer {
+	padding: 0 !important;	
+}
+.navBar	 {
+	display: flex;
+	justify-content: center;
+	width: 100vw;	
+	background-image: url("https://previews.123rf.com/images/jengel17/jengel171906/jengel17190600339/125128932-horizontal-graphic-gears-border-big-and-little-diagonal-puzzle-gray.jpg");
+	background-size: contain;
+	opacity: 0.5;
+}
+
+.brand-max {
+	font-family: "Sega";
+	font-size: 1.5rem;
+	font-stretch: extra-expanded !important;
+	color: black !important;	
+	padding: .3125rem;
+	margin: 0;
+	opacity: 100;
+}
+.formCustom {
+	border: 2px groove grey;
+}
+
+.inp-group-max{
+	width:100%;
+	max-width:32rem;
+	margin:auto;
+	min-width: 300px !important;
+	opacity: 100;
+	background-color: #FFFFFF !important;
+}
+.btn-bg {
+	background-color: #FFFFFF;
+	border-radius: 0;
+}
+.border {
+	border-radius: 0;
+}
+#root { 
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color:steelblue;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100vw;
+}
+#container-wrapper {
+	background-image: url("https://raw.githubusercontent.com/devtlv/studentsGitHub/master/JS/Week%204/Day5/Mini%20Projects/Mini%20Project%201%20(Robots)/circuit-pattern.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	min-width: 100vw;
+}
+#row {
+	max-height: 100%;
+	align-items: center;
+}
+.customCol {
+	margin-top: 1rem;
+	padding-left: unset;
+	display: flex;
+}
+.customCard {
+	padding: 0.5rem;
+	word-wrap: none !important;
+	border-radius: 0.5rem;
+}
+.cardImg {
+	border-radius: 50%;
+	background-color: darkslategray;
+	width: 100%;
+}
+.customCardBody {
+	padding: 0.5rem;
+	word-wrap: normal;
+}
+h5 {
+	font-weight: bold;
+}
+p {
+	font-size: 0.8rem;
+}
