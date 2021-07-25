@@ -91,28 +91,6 @@ input.addEventListener("keyup", function () {
 		}
 		console.log(card);
 	}
-
-	// let deck = [];
-	// for (item in cards) {
-	// 	let card = cards[item].textContent;
-	// 	deck.push(card);
-	// console.log(card);
-	// console.log(deck);
-	// let remaining = robots.filter(user => user.name.toUpperCase().includes(input.value.toUpperCase()));
-	// console.log(remaining);
-	
-
-
-	// for (title of cards) {
-	// 	let currName = title.querySelector("h5");
-	// 	console.log(currName.innerText);
-	// 	if (currName.innerText.toUpperCase().search(filteredInput) > -1) {
-	// 		console.log("sdfsdfsd");
-	// 		title.style.display = "";
-	// 	} else {
-	// 		title.style.display = "none";
-	// 	}
-	// }
 });
 
 function createCards() {

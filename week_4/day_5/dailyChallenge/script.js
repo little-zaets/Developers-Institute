@@ -3,9 +3,9 @@
 //and returns a boolean that indicates whether or not the first string is an anagram of the second string.
 let isAnagram = (first, second) => sortStr(first) == sortStr(second);
 function sortStr(str) {
-	return str.trim().split("").sort().join("");
+	return str.toLowerCase().split("").sort().join("").trim();
 }
-console.log(isAnagram("dusty", "study")); //true
+console.log(isAnagram("Dusty", "stUdy")); //true
 console.log(isAnagram("night", "  thing  ")); //true
 console.log(isAnagram("   state", "taste  ")); //true
 console.log(isAnagram("cider", "cried")); //true
