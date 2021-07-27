@@ -104,7 +104,7 @@ function createCard(item) {
 	col.setAttribute("class", "col customCol");
 	row.appendChild(col);
 	let card = document.createElement("div");
-	card.setAttribute("class", "card w-100 h-100 customCard");
+	card.setAttribute("class", "card h-100 customCard");
 	card.setAttribute("style", "background-image: url('https://raw.githubusercontent.com/devtlv/studentsGitHub/master/JS/Week%204/Day5/Mini%20Projects/Mini%20Project%201%20(Robots)/card-pattern.png'); background-color: royalblue; background-size: cover; border-radius: 0.5;");
 	col.appendChild(card);
 	let cardImg = document.createElement("img");

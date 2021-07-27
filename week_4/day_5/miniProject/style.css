@@ -61,22 +61,30 @@ html {
 	background-image: url("https://raw.githubusercontent.com/devtlv/studentsGitHub/master/JS/Week%204/Day5/Mini%20Projects/Mini%20Project%201%20(Robots)/circuit-pattern.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100%;
+	min-height: 100vh;
 	min-width: 100vw;
+	justify-content: center;
+
+}
+#container-root {
+	justify-content: center;
 }
 #row {
 	max-height: 100%;
 	align-items: center;
+	justify-content: space-evenly;
 }
 .customCol {
 	margin-top: 1rem;
-	padding-left: unset;
+	padding: unset;
 	display: flex;
+	justify-content: center;
 }
 .customCard {
 	padding: 0.5rem;
 	word-wrap: none !important;
 	border-radius: 0.5rem;
+	min-width: 190px;
 }
 .cardImg {
 	border-radius: 50%;
