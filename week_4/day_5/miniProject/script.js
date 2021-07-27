@@ -78,7 +78,8 @@ let mainCard = document.getElementsByClassName("customCol");
 input.addEventListener("keyup", function () {
 	
 	let cards = document.getElementsByTagName("h6");
-	
+	//let robotArray = robots.filter(robot => robot["name"].toUpperCase().includes(input.value.toUpperCase()));
+	// console.log(robotArray);
 	for (let i = 0; i < cards.length; ++i) {
 		let card = document.getElementById(`${i + 1}`);
 		console.log(input.value.toUpperCase());

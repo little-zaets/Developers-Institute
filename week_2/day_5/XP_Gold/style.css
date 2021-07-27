@@ -1,0 +1,18 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+button {
+	justify-content: space-evenly;
+}
+
+.numbers button {
+	background-color: mediumseagreen;
+
+}
+
+.operators button {
+	background-color: orange;
+}

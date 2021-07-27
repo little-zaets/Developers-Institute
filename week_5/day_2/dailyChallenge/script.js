@@ -17,7 +17,6 @@ function createGetRequest(input) {
 	//CAN USE new searchUrlParams and put search parameters + api key in the created object 
 	xhr.open('GET', `https://api.giphy.com/v1/gifs/random?q=${input}&rating=g&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My`);
 	xhr.responseType = 'json'
-	input.textContent = "";
 	//3. Send the request
 	xhr.send();
 	//4. Add events
