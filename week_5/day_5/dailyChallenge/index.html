@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Week 5 Day 5 Daily Challenge</title>
+</head>
+<body onload="createCurrencies()">
+	<div class="wrapper">
+		<div id="overlay">
+			<h1 id="title">Currency Converter</h1>
+			<form id="currencies" name="currencies">
+				<h2 label for="from">From</h2>
+				<select id="from" name="from">
+					<option></option>
+				</select><br>
+				<h2 label for="to">To</h2>
+				<select id="to" name="to">
+					<option></option>
+				</select><br>
+				<h2 label for="amount">Amount</h2>
+				<div class="input-group">
+					<input id="amount" type="text" name="amount" onfocus="this.value=''" value="0.00"><input id="submit" type="submit" value="Convert"><br><br>
+				</div>
+				<input type="text" id="result" name="output" value="1.00"></input>
+			</form>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

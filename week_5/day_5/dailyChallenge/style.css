@@ -1,0 +1,72 @@
+html {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+}
+body {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.wrapper {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background-image: url("https://img.freepik.com/free-photo/coins-paper-money-globe-white-statistic-form-background_1387-296.jpg?size=626&ext=jpg&ga=GA1.2.2103491985.1627084800");
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#overlay {
+	position: absolute;
+	display:flex;
+	flex-direction: column;
+	height: 80%;
+	width:50%;
+	color: white;
+	background-color: slateblue;
+	opacity: 0.65;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10;
+	padding: 5px;
+}
+#title {
+	margin-top: 0;
+}
+select {
+	border-style: groove;
+	width: 100%;
+	font-size: 1em;
+	background-color: darkslateblue;
+	color: white;
+}
+#currencies {
+	width: 300px;
+}
+input {
+	background-color: darkslateblue;
+	color: white;
+	line-height: 1.5em;
+	border-style: groove;
+}
+#amount {
+	width: 76%;
+}
+.input-group {
+	width: 100%;
+}
+#result {
+	width: 100%;
+	padding: 0;
+	border: 1px;
+	text-align: center;
+	font-size: 1.5em;
+}
+#submit:hover {
+	cursor: pointer;
+}

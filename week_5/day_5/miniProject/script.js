@@ -54,7 +54,7 @@ function displayError() {
 	birthYear.innerText = "";
 }
 
-//fetch planet via the url provided in the 	original response
+//fetch planet via the url provided in the original response
 const getPlanet = async(response) => {
 	let newUrl = response;
 	let planetFetch = await fetch(newUrl);
