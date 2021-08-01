@@ -61,7 +61,6 @@ async function submitInput(e) {
 	e.preventDefault();
 	//retrieve user input - amount needed to be converted
 	let input = document.getElementById("amount").value;
-	input = parseFloat(input);
 	//get selected options for to and from
 	let fromVal = from.options[from.selectedIndex].value;
 	let toVal = to.options[to.selectedIndex].value;
@@ -71,21 +70,22 @@ async function submitInput(e) {
 	try {
 		let valFrom = await getData(realTimeRatesFrom);
 		let valTo = await getData(realTimeRatesTo);
-		console.log(valFrom.success);
-		console.log(valTo.success);
-		if (!valFrom.success || !valTo.success) {
-			throw new Error("API data retrieved had an error: ");
+		if (!valFrom.success) {
+			throw new Error(`\nCode: ${valFrom.error[code]}\nInfo: ${valFrom.error[info]}`);
+		}
+		else if (!valTo.success) {
+			throw new Error(`\nCode: ${valTo.error["code"]}\nInfo: ${valTo.error["info"]}`);
 		}
 		else {
 			valFrom = 1/(valFrom.quotes[`USD${fromVal}`]); //default currency is USD -> dividing resulting value by 1 to perform conversion
 			valTo = valTo.quotes[`USD${toVal}`];
 			//conversion calculation for from, to and input amount
-			let finalAmount = (valFrom * valTo) * input;
+			let finalAmount = (valFrom * valTo) * input + ` ${toVal}`;
 			//write output value to the document
 			let output = document.getElementById("result").value = finalAmount;
 		}
 	}
 	catch (error) {
-		console.log("Error: ", error);
+		console.log(error);
 	}
 }

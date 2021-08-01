@@ -24,7 +24,7 @@ body {
 	position: absolute;
 	display:flex;
 	flex-direction: column;
-	height: 80%;
+	min-height: 80vh;
 	width:50%;
 	color: white;
 	background-color: slateblue;
@@ -58,12 +58,15 @@ input {
 	width: 76%;
 }
 .input-group {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
 	width: 100%;
 }
 #result {
 	width: 100%;
-	padding: 0;
-	border: 1px;
+	border: 2px;
 	text-align: center;
 	font-size: 1.5em;
 }
