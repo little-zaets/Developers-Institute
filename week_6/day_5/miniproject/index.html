@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Week 6 MiniProject</title>
+</head>
+<body>
+	<header>TO-DO LIST</header>
+	<form id="myForm" name="myForm">
+		<div id="wrapper" class="wrapper">
+			<div class="input-group" id="input-group">
+				<table>
+					<tr>
+						<td>
+							<label for="taskName">Name: </label>
+						</td>
+						<td>
+							<input id="taskName" name="taskName" type="text" class="inputBox" required>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="description">Description: </label>
+						</td>
+						<td>
+							<textarea id="description" name="description" type="textarea" rows="2" cols="30" class="inputBox"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="startDate">Start date/time: </label>
+						</td>
+						<td>
+							<input type="datetime-local" name="startDate" id="startDate" class="inputBox">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="endDate">End date/time: </label>
+						</td>
+						<td>
+							<input type="datetime-local" name="endDate" id="endDate" class="inputBox">
+						</td>
+					</tr>
+					<!-- <tr>
+						<td>
+							<label for="isDone">Done: </label>
+						</td>
+						<td>
+							<input type="checkbox" id="isDone" name="isDone" class="inputBox">
+						</td>
+					</tr> -->
+					<td colspan="2">
+						<input id="submit" type="submit" value="ADD TASK" class="view">
+					</td>
+				</table>
+			</div>
+		</div>
+	</form><br>
+	<div class="view" id="view">
+		<a href="tasks.html" target="_blank">VIEW TASKS</a>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
+
+	

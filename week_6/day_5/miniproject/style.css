@@ -1,0 +1,130 @@
+body {
+	min-height: 100vh;
+	margin-top: 10px;
+	padding: 0;
+	background: linear-gradient(to bottom, transparent 0%, indianred 100%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+	font-size: 1.5em;
+	color: indianred;
+	padding: 2px;
+	font-weight: 400;
+	text-shadow: 2px 0 3px black;
+}
+#myForm {
+	min-height: 40%;
+	min-width: 40%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.wrapper, .view {
+	background:mistyrose;
+	opacity: 0.6;
+}
+#wrapper {
+	min-height: 100%;
+	border: 2px groove rgba(128, 0, 0, 0.45);
+	display: flex;
+	justify-content: center;
+}
+.input-block {
+	height: 100%	
+}
+label {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	text-align: left;
+}
+.inputBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 255px;
+}
+table {
+  padding: 5px;
+  border-spacing: 15px;
+  height: 100%;
+  width: 100%;
+}
+tbody {
+	padding: 5px;
+}
+.input-group {
+	height: 100%;
+}
+.view {
+    height: 25px;
+	border: 1px groove rgba(128, 0, 0, 0.45);
+	color: indianred;
+	font-weight: bold;
+}
+#submit {
+	opacity: 1;
+	width: 100%;
+}
+#view {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	opacity: 0.6;
+	padding: 1px 6px;
+}
+a:link, a:visited {
+	text-decoration: unset;
+	color: indianred;
+}
+.view:hover{
+	cursor:pointer;
+	background-color: rgb(248, 192, 192);
+}
+#taskWrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#listTasks {
+	min-height: 100%;
+	border: 2px groove rgba(128, 0, 0, 0.45);
+	padding: 5px;
+	margin: 5px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.description {
+	display: none;
+	overflow: hidden;
+}
+.delete {
+	opacity: 0.8;
+}
+.collapsable {
+
+	transition: max-height 0.2s ease-out;
+}
+.active, .collapsable:hover {
+  background-color: rgb(248, 192, 192);
+}
+.task-top {
+	min-height: 100px;
+
+}
+label {
+	display: inline;
+}
+.task-exp {
+	background-color: lightslategrey;
+}
+.task-done {
+	background-color:darkolivegreen;
+}
