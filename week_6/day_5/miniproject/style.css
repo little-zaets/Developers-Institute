@@ -28,6 +28,9 @@ header {
 	background:mistyrose;
 	opacity: 0.6;
 }
+.view {
+	margin: 2px;
+}
 #wrapper {
 	min-height: 100%;
 	border: 2px groove rgba(128, 0, 0, 0.45);
@@ -63,7 +66,7 @@ tbody {
 }
 .view {
     height: 25px;
-	border: 1px groove rgba(128, 0, 0, 0.45);
+	border: 2px groove rgba(128, 0, 0, 0.45);
 	color: indianred;
 	font-weight: bold;
 }
@@ -127,4 +130,11 @@ label {
 }
 .task-done {
 	background-color:darkolivegreen;
+}
+.noTasks {
+	padding: 5px;
+	color:rgb(123 24 24 / 100%);
+	border: 2px groove rgba(128, 0, 0, 0.45);
+	margin: 5px;
+	user-select: none;
 }

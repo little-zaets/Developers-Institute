@@ -10,6 +10,7 @@ let tasks = JSON.parse(localStorage.getItem('tasks'));
 if (tasks == null) {
 	tasks = [];
 }
+//get input data and push to objects array + push to local storage
 function getInput(e) {
 	e.preventDefault();
 	let taskObj = {

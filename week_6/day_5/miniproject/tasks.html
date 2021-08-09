@@ -11,7 +11,9 @@
 	<header>TASKS</header>
 	<div id="taskWrapper" class="wrapper">
 	</div>
-	<button type="reset" id="clearAll" class="view">Clear All</button>
+	<div class="btn-container" id="outerButtons">
+		<button type="reset" id="clearAll" class="view" onclick="clearAll()">Clear All</button><input type=button id="return" class="view" onClick="location.href='index.html'"value='Go Back'>
+	</div>
 	<script src="tasks.js"></script>
 </body>
 </html>
