@@ -5,10 +5,10 @@
 // let a = 5;
 // let b = 10;
 // //Write some more code in the main.js file so when you run it in the command prompt it logs Hello you are 15
-// console.log('Hello you are', a + b);
+console.log('Hello you are', a + b);
 
 // //Exercise 2 : Hello Node.Js #2
-// console.log("Hi, thanks for running me with npm start!");
+console.log("Hi, thanks for running me with npm start!");
 
 //Exercise 3 : Nodemon
 // Install nodemon
