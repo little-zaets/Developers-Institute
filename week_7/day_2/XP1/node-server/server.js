@@ -10,7 +10,7 @@ const server = http.createServer((request, response) => {
 		firstname: 'John',
 		lastname: 'Doe'
 	}
-// 	//need to stringify to send text always - http protocal accepts only strings
+// 	//need to stringify to send text always - http protocol accepts only strings
 	response.end(JSON.stringify(user));
 })
 //Your server should run on http://localhost:8080/
