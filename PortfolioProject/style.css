@@ -8,13 +8,15 @@ body {
 }
 
 .nav-bg {
-	background-color: lightslategrey;
+	background-color:lightgray;
 }
 
 .nav-link{
-	color: red !important;
+	color: grey !important;
 }
-
+.icon {
+	opacity: 0.7;
+}
 hr {
 	max-width: 65px;
 	border-width: 2px;
@@ -22,8 +24,8 @@ hr {
 }
 
 header.hello {
-	background-image: url("/home/rinav/Developers-Institute/PortfolioProject/images/portfolio/Classic.jpg");
-	background-size: cover;
+	background-image: url("/home/rinav/Developers-Institute/PortfolioProject/images/background.jpg");
+	background-size:cover;
 	background-repeat: no-repeat;
 	height: 500px;
 	position: relative;
