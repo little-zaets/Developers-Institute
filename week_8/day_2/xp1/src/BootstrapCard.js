@@ -15,6 +15,7 @@ const BootstrapCard = () => {
 		</div>
 	)
 }
+export default BootstrapCard;
 
 //Exercise 3 : Component Properties
 //Using the code you created in the previous exercise (Exercise 2 - Part 3), 
@@ -24,15 +25,15 @@ const BootstrapCard = (props) => {
 	return (
 		<div>
 			<div className="card m-5" style={{ width: '30rem' }}>
-				<img className="card-img-top" src={ props.singer.imageUrl } alt="Card image cap" />
+				<img className="card-img-top" src={ props.obj.imageUrl } alt="Card image cap" />
 				<div className="card-body">
-					<h5 className="card-title">{ props.singer.title }</h5>
-					<p className="card-text">{ props.singer.description }</p>
-					<a href={ props.singer.buttonUrl } className="btn btn-primary">{ props.singer.buttonLabel }</a>
+					<h5 className="card-title">{ props.obj.title }</h5>
+					<p className="card-text">{ props.obj.description }</p>
+					<a href={ props.obj.buttonUrl } className="btn btn-primary">{ props.obj.buttonLabel }</a>
 				  </div>
 			</div>
 		</div>
 	)
 }
-
 export default BootstrapCard;
+

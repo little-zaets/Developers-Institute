@@ -8,7 +8,7 @@ const PrintHello = () => {
 	)
 }
 
-// export default PrintHello;
+export default PrintHello;
 //The PrintHello function should now return <h1>I'm a React Component</h1>;
 //Call the PrintHello function as a React component to display the content.
 h1 = <h1>I Love React Component</h1>;

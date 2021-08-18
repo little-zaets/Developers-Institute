@@ -1,10 +1,12 @@
-// import PrintHello from './PrintHello.js';
+import PrintHello from './PrintHello.js';
 import BootstrapCard from './BootstrapCard';
+import Jumbotron from './Jumbotron';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
 
 function App() {
-	const singers = [
+	//bootstrapcard props 
+	const objs = [
 		{
 			title: "Bob Dylan",
 			imageUrl: "https://miro.medium.com/max/4800/1*_EDEWvWLREzlAvaQRfC_SQ.jpeg",
@@ -20,11 +22,24 @@ function App() {
 			description: "Sir James Paul McCartney CH MBE (born 18 June 1942) is an English singer, songwriter, musician, composer, and record and film producer who gained worldwide fame as co-lead vocalist and bassist for the Beatles."
 		}
 	]
+	//jumbotron props
+	const jumbo = {
+		title: "Welcome to react",
+		description: "React is the most popular rendering library in the world",
+		buttonLabel: "Go to the official website",
+		buttonURL: "https://reactjs.org/"
+	}
   return (
     <div className="App">
-		  {/* <PrintHello/> */}
-		  <BootstrapCard singer={singers[0]} />
-		   <BootstrapCard singer={singers[1]}/>
+		<PrintHello/>
+		<BootstrapCard obj={objs[0]} />
+		<BootstrapCard obj={objs[1]} />
+		<Jumbotron
+			title="Welcome to react"
+			description="React is the most popular rendering library in the world"
+			buttonLabel="Go to the official website"
+			buttonURL="https://reactjs.org/"
+		/>
     </div>
   );
 }
