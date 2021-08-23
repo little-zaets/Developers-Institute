@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import './index.css';
-import Xp from './Xp';
+import DailyChallenge from './DailyChallenge';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
+import { reducers } from './reducers';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Xp />
+	<React.StrictMode>
+		<Provider store={createStore(reducers)}>
+			<DailyChallenge />
+		</Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
