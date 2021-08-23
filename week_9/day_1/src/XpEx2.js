@@ -33,11 +33,12 @@ class XpEx2 extends React.Component {
 	
 	render() {
 		const displayControl = this.state.display;
+		console.log(this.state);
 		return (
 			<>
 				{displayControl 
 					? <Data result={this.state} handleReset={this.handleReset} handleChange={this.handleChange} />
-					: <User result={this.state} handleSubmit={this.handleSubmit} handleChange={this.handleChange}/>
+					: <User result={this.state} handleSubmit={this.handleSubmit} handleChange={this.handleChange} handleReset={this.handleReset}/>
 
 				}
 			</>

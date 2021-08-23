@@ -2,7 +2,7 @@ import React from 'react';
 
 const User = (props) => {
 	console.log(props);
-	let { result, handleSubmit, handleChange } = props;
+	let { result, handleSubmit, handleChange, handleReset } = props;
 	let { firstName, lastName, phone, email } = result;
 	return (
 		<>
@@ -13,7 +13,8 @@ const User = (props) => {
 				<input className='input-value' type="text" name="lastName" value={lastName} onChange={handleChange} placeholder='Last Name' /><br /><br />
 				<input className='input-value' type="text" name="phone" value={phone} onChange={handleChange} placeholder='Phone Number' /><br /><br />
 				<input className='input-value' type="email" name="email" value={email} onChange={handleChange} placeholder='Email' /><br /><br />
-				<button type="submit">Submit</button>
+				<input type="submit" value="Submit" />
+				<button type="reset" onClick={handleReset}>Reset</button>
 			</form>
 		</>
 	)
