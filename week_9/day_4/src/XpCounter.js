@@ -1,4 +1,4 @@
-import Counter from './components/Counter';
+import Counter from './CounterComponents/Counter';
 import './App.css';
 //import React only if its a class component
 

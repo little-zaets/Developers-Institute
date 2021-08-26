@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import {increment, decrement} from '../redux/actions'
+import {increment, decrement} from '../CounterRedux/actions'
 const Counter = (props) => {
 	let { increment, decrement , counter } = props;
 	const incrementIfOdd = () => {
