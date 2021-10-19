@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+
 const MovieCard = (props) => {
 	console.log(props)
 	const { movieInfo } = props;
@@ -10,7 +11,7 @@ const MovieCard = (props) => {
         <div className="card card-body bg-dark text-center h-100">
           <img className="w-100 mb-2" src={image} alt="Movie Poster" />
           <h5 className="text-light card-title">
-            {movie.Title} - {movie.Year}
+            {title} - {year}
           </h5>
           <Link className="btn btn-primary" to={'/movie/' + id}>
             Movie Details
